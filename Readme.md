@@ -12,9 +12,9 @@
 Focus: Ownership, lifetimes, error handling, and pattern matching.
 
 ### Day 1 — Setup + Basics
-- [ ] **Learn:** Toolchain, Cargo, rustc, project structure  
-- [ ] **Code:** “Hello Rust”, variables, constants, types  
-- [ ] **Reflect:** Why Rust is memory-safe without GC  
+- [X] **Learn:** Toolchain, Cargo, rustc, project structure  
+- [X] **Code:** “Hello Rust”, variables, constants, types  
+- [X] **Reflect:** Why Rust is memory-safe without GC  
 📘 *Read:* [The Rust Book Ch 1–3](https://doc.rust-lang.org/book/)
 #### Notes / Challenges
 
