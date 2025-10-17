@@ -90,6 +90,64 @@ fn shadowing_principles(){
 }
 
 
+fn data_types(){
+
+     // integer types i8, i16, i32, i64, i128, isize
+     // and unsigned integer types u8, u16, u32, u64, u128, usize
+    let x : i32 =  "42".parse().expect("not a number! ");
+    println!("this is {}",x);
+
+    let y = 2.0;
+    let z : f32 = 3.0; // flaot 32
+    println!("this is {} and {}",y,z);
+    // boolean type
+    let t : bool = true;
+    let f  = false;
+    // character type
+    let c : char = 'z';
+    let z : char = 'ℤ';
+    let heart_eyed_cat : char = '😻';
+
+    // tuple type
+    let tup : (i32 , f64 , u8)   = (500, 6.4, 1);
+    println!("this is {:?}",tup);
+    let x :i32 = tup.0;
+    let y :f64 = tup.1;
+    let z :u8 = tup.2;
+    println!("this is {} , {} and {}",x,y,z);
+    // destructure tuple
+    let tup = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    println!("The value of y is: {y}");
+    // array type
+    let a : [i32; 5] = [1, 2, 3, 4, 5];
+    let first = a[0];
+    let second = a[1];
+    println!("this is {} and {}",first,second);
+    let a = [3; 5]; // same as let a = [3, 3, 3, 3, 3];
+    println!("this is {:?}",a); 
+
+    let arr = [1,2,3,4,5];
+    let mut idx = String::new();
+     io::stdin().read_line(&mut idx).expect("failed");
+    let idx : usize = idx.trim().parse().expect("Please type a number!");
+    let element = arr[idx];
+    println!("the value of the element at index {} is: {}", idx, element);
+    
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 
 
@@ -105,7 +163,11 @@ fn main() {
     // mutable variable
     println!("The maximum points is {}", MAX_POINTS);
 
-    shadowing_principles();
+    //shadowing_principles();
+
+    data_types();
+
+
 
 
 
